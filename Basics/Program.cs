@@ -10,7 +10,7 @@ namespace Basics
     {
         static void Main(string[] args)
         {
-            string message = "Hello World!!";
+            string message = "Hello World!! This is my first C# Application";
 
             Console.WriteLine(message);
         }
