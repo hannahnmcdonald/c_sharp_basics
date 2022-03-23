@@ -80,6 +80,12 @@ namespace Basics
             var shippingMethod = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
             Console.WriteLine(shippingMethod.ToString());
 
+            // Reference Types:
+            var a = 10;
+            var b = a;
+            b++;
+            Console.WriteLine(String.Format("a: {0}, b: {1}", a, b));
+
         }
     }
 }
