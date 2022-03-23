@@ -47,6 +47,13 @@ namespace Basics
             Console.WriteLine(flags[1]);
             Console.WriteLine(flags[2]);
 
+            // Array of Strings
+            var sg1 = new string[4] { "Jack", "Sam", "Daniel", "Teal'c" };
+            Console.WriteLine(sg1[0]);
+            Console.WriteLine(sg1[1]);
+            Console.WriteLine(sg1[2]);  
+            Console.WriteLine(sg1[3]);
+
 
 
 
