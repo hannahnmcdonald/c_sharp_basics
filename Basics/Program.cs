@@ -61,8 +61,24 @@ namespace Basics
             Console.WriteLine(sg1[2]);  
             Console.WriteLine(sg1[3]);
 
+            // string.Format Template
+            var firstName = "Hannah";
+            var lastName = "McDonald";
 
+            var fullName = string.Format("My Name is {0} {1} ", firstName, lastName);
+            Console.WriteLine(fullName);
 
+            // enum to and from int
+            var method = ShippingMethod.Express;
+            Console.WriteLine((int)method);
+
+            // enum to and from string
+            Console.WriteLine(method.ToString());
+            Console.WriteLine(method);
+
+            var methodName = "Express";
+            var shippingMethod = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
+            Console.WriteLine(shippingMethod.ToString());
 
         }
     }
