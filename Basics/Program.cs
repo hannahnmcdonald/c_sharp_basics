@@ -92,6 +92,18 @@ namespace Basics
             array2[0] = 0;
             Console.WriteLine(String.Format("array1[0]: {0}, array2[0]: {1}", array1[0], array2[0]));
 
+            // Random password generator
+            // Random() .NET class
+            var random = new Random();
+
+            const int passwordLength = 10;
+            var buffer = new char[passwordLength];
+            for (var i = 0; i < passwordLength; i++)
+                buffer[i] = (char)('a' + random.Next(0, 26));
+
+            var password = new string(buffer);
+            Console.WriteLine(password);
+
         }
     }
 }
