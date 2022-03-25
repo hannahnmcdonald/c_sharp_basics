@@ -104,6 +104,18 @@ namespace Basics
             var password = new string(buffer);
             Console.WriteLine(password);
 
+            // Date Time
+            var dateTime = new DateTime(2022, 3, 25);
+            var now = DateTime.Now;
+            var today = DateTime.Today;
+
+            Console.WriteLine(now.ToString()); // 3/25/2022 5:01:46 PM
+            Console.WriteLine(now.ToLongDateString()); // Friday, March 25, 2022
+            Console.WriteLine(now.ToShortDateString()); // 3/25/2022
+            Console.WriteLine(now.ToLongTimeString()); // 5:01:46 PM
+            Console.WriteLine(now.ToShortTimeString()); // 5:01 PM
+            Console.WriteLine(now.ToString("yyyy-MM-dd HH:mm")); // Format Modifiers
+
         }
     }
 }
